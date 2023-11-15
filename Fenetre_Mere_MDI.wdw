@@ -1,0 +1,293 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : Fenêtre_Mere_MDI
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : Fenêtre Mère MDI
+ subtype : 0
+window :
+ name : Fenêtre_Mere_MDI
+ identifier : 0x3b0a60f724613ec7
+ internal_properties : CAAAAAgAAADulaYJMhf+t4YAex0SeUak5R/VD6QCBiCutGj3hRMi2/6Rrn9w7Zf6+TF7MvbRKpinFb9GSRSnAAeS2ULOG3NJW6SczXe1Wn6KjdKgmto9oUR1W34qxdUv2IFQ3ouyvpBUdiekkxQHs/REOrXp1OTlJx9uDvC2Et4wuIW0CCLxghpnRHS+A0lX1eYFiFOqlVCu3uuMMVXZeHP4wMGZKv3wsky9t8O0z3pzJaEaLI3U5IyJFbY23uSkJrSr/IHGapYCAK7ydkzgJP9TzaWLLY4cuz7ME04IrKK3JSIQKgUYlKOiSmoD70FbnEXUpbrcLAPELjS+LQGmWWUjn+6iCRUCkx5rO7BDArhO2jibGN0LqjXxnmhvJyTxZEBp3FSPG0ni5uUJvJuuqTex5PKcPXIPksFZmlqZuNFW1437Qs25g7Lpjt/bmQAp/JlKppiT7/jcQF93soYYXOQHkwiGCyra8cO+9MISum60RCBA2bCCz5SZcc6J2d+GekkwqWZxhmzFCPJeDeOq/Kl+dtIjsErS1qmQ+cv2WG/JMgWWBYH1fyAnZriEvwaFO683sqfgYi56Z/LSzY7GvvDcwcdqm9xVyoksDfBGq50UxK9yN7BNh4ecRnNyF5pdrenBJ1qLIBBTaIqqDGkW713CJpuVEAA0iWYfEWcv0Dz8/l/NAWkvwBHMg7dc5WX5e8c1kKIxZQ+GY9pMjRbcNzrHALXNYXVWcaBJJjM0T2689CRUB+N7kBUJaEeBAlib+g32FnCfWLZx5RZAvD+8QkA8gobEuLs83ORGc4TkL0xdrGAIe1g=
+ properties :
+  width : 731
+  height : 466
+  widthClient : 729
+  heightClient : 412
+ controls : []
+ menu :
+  name : _Menu
+  identifier : 0x3b0a60f73ba03ec7
+  internal_properties : CAAAAAgAAADAfZ27Q+jJ/MBXHLGCb7PyE2Yqjvuo9mAX2ZN+LLuyQtzms1431znXR0sNCCeLESXZp1gqmo+m2mUhb2ELR2phZ8VOgUSyXddfQyxpxffipvH/iiFuFkCLgpjx1Ah9/9/ndeRpWb0s9Qcjy8oPtW3aMcRtuglgDe5Ch9/jnC/Drp19/hhf+qz96diLw5T0yWlzg33c/E8hhMwUBdSOV69/8iDQGLfTvLoTvV3YkiQ5Dce7dxB2gUx1AVvVTykQMm7G+0haIOV568KMGgPEJluRN2XjgQ11Tb8vVxt6P2g=
+  options :
+   -
+     name : Menu
+     identifier : 0x3b0a618b6ecb7e9b
+     internal_properties : CAAAAAgAAADLlJYutuzHNOcWP9msjVVZYmnxlTqfenlF4i6NE8uSvoYeZBfBS4d920thXiX/zXHHc6vCykDmKeEG76wGqMo7SiyJN+CWmXD3U+0Jp3x/r2GK5yNL1l50mOvL00kU0z47W0fwauAVSiDSfK73QrIsgAHwk72OFGdczRS0OwLu0pVKG8rZMJA1ssAATFV272UJe6L3RsxZ2Y+3jRMinTc0okl+nj5v7L/XbGNxikM2wBx+RHe8o5/Kyhjut+R4PvReGtwEXb9dHIu7jMAlWQPDTxbtPp8iOD7BcTUUbgqUEOH3Rd3We7suWMG+GWafBNEsJ3lxjpqcsZJD/S8y6zOwMvFfE/Tv
+     options :
+      -
+        name : Lister
+        identifier : 0x3b0a61b0628b0fbd
+        internal_properties : CAAAAAgAAAAMXHkBp8BWk7xAtV0acJBlG1sIxyrtS9GH0jrQMM6gR9L3rRkfsiLj4nuyKYk5oS425gvMNTMjnYG08+JbsZYMv6Jn/lRcxuxdcx9y5QpGFqpdH/z4fTqqK6yqvQ6R8h1dCN2sQt8c/EDsHOsTGN9tV97Ad8bBpDNvvrP/GDEJ5UFDhacvvGXVgry6R5LbT1SSJwjJ18Jpj78HfGtgroGD0k6v4nssA9guZSoYkdMmDGDzP/0iR0t9yKgYKINyS/OvRGnuXVnrBDagKbNk1HVxJUmn/DHHn5FsbiVZyv/nhIFwoy6V7RxSyV0EbXfKhYWNaexVkVVV6JhJIBF0DNHPVRhPjKyV7+v43U6ki8IrTS1pf8uJPkpJb+8CGxQi3UNdvAD1
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             // Si la fenêtre principale listant les clients n'est pas déjà activée
+             si FenEtat(Fen_TableClients)=INEXISTANT alors
+             	gsAliasListeClient = MDIOuvre(Fen_TableClients)
+             FIN
+            type : 32
+      -
+        name : Nouveau_Client1
+        identifier : 0x3bd966b15882dde5
+        internal_properties : CAAAAAgAAAApVAf1kGdEtFG9vRMpirIraNS4P6J47ifj/9nwKE/p4M+2BL+IQgzeyWpoUVsO+KNtUBQ1qdShBlG1jFBEy9hXrDdG5YsNyCC/4vglTdyVUYXAqdwzML3AlKlo2/04JYjwbXXybMBcuQ5QfnYtRi5gns9wvOvBL35jQBL0uJYMYdLpskGPkDyNxqgTlK4xW2S1YiBqZoIavlFdfGmqewcn5TRkaxXZRcsdSzA5amM9lDPiJVXtcBWNyPUFQggiH1F8lYGmssMSW1FozQeAlxsDdzrIclEhoekAnoc4K6SV2VF8GpGAxI5P1ooyZT6LodXB+ywkoEa3dQRjia37Qc/vI03TVw2If6y7v6K48KjGNNVTMVH31wJFOT1PMqY=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             // Ouverture de la fiche client en création
+             MDIOuvre(Fen_Fiche_Client,"",<§$0001§>,<§$0002§>)
+             
+            type : 32
+      -
+        name : _1
+        identifier : 0x3bd966b943dbfd31
+        internal_properties : CAAAAAgAAACttYlj/2NlwXohAAAxgYB9qnfY7iXL1gexLJzTNUFB1kRIj0tTVUaR1YgjuT12IGS6X1+lTT3rP/AElX+GRogODHL8O3qrl+YCj3TazwHTVQ/2yuQxIdsYX5BUFhq7ldLX4EZfGpW60JGG6BmCSg+yiU2r1NlEfPu6u5KaTjCKFnPnhYMkymtwHY3+vJ3w6tvDFhU+24sadgkM2kloxqSD6oCIGJwhml5n/N+mkmPn4vVV1EDUbRyMsvedZVPjqoikmOJ+kPPo1ovpOIhsfXAEyEhvRV9u1r/BEUnVVV+HZKxeYiyQqXK4xN8VXGVuhpU=
+        code_elements :
+         type_code : 26
+         p_codes : []
+      -
+        name : Quitter_
+        identifier : 0x3bd966893a8d4505
+        internal_properties : CAAAAAgAAAA6jFL0NtvIVm0fQMJZTgIg/oExy6ZRspUcTcA5bfE4CU419th0X1LLfOwglfRvh6orYxv7f5XPdG8IBLaTfgtT1O47nOzkpyF7LJh4tKRXedGdW/aadywcm/c29GEPIwv3mkv0lrnnFryacJ+OaYJJmUA+qGYapilPxh1BYNWs3f/Al8MhA7qAN52pEhl687OP53MCVCTG+MKKI6Shnu5+boFH8o5cXoitlk8kyuAUaeovwkyFvH2tlJ7gbMmpJMoFfZ6h356PItcjgeNuLyI31WnTdq7pPIJt4YDoyoEp5hc2kEv3u+SFwtpYMVjYnusUd8NrnEmO9TVR8NWAI5IBtWie5P7v8/zy1mWiVhDhWUeQnJGV
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             Si EnModeTestAutomatique() _ou_ Ouinon(Non,<§$0000§>)=oui alors
+             	FinProgramme()
+             FIN
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+         type : 32
+   -
+     name : Réorganisation
+     identifier : 0x3b0a6d9e0abbab95
+     internal_properties : CAAAAAgAAACoA/z+tfApT6Gpyye39Nl0TRvMPUhy/nboVgkJZZU3c5riGV2Osau2S6bQyBunhsyMooWfQ7Jzeod9cNiJU4EjtD6Wxj3TunGGYbpsmIuWANOsfCktoAhdFTl8XeQJC3ExEwV4Z8nf0H0xyTq6bQFL/HkLf6iEgKPcfnPCbl18bZqr9ZY070SELi1oMhk0jPx5Hm0iIl/A/wW8hC9gCsV+4wLX906p0Cdi3nO+q2ObaUgNjE4+VZQB1tNvD0I255CEEJ+4oLQUiSpJ+fFUhWC+7YXs541Xp4wrbzFSEBKKrSOpYrYxDRlANVVCImRMtVqcfLCBzOFjaarwy4gC1XP2c3zzBG3a5W9kwA==
+     options :
+      -
+        name : Cascade
+        identifier : 0x3b0a6e2b2d36d1e7
+        internal_properties : CAAAAAgAAAB8XS4V9FK1fGvjnVTaTQi8+Cutaw6ro1GtHL9dQPXT7IbMWW651rVe5WcGiZ64oKwdVIT5gOnkwksSyBAEK5B64MaFMvbO8PJzHUhkwIxoXdZC4bWVQl0jsiD+5iO1wAxF8dAO0wWez4b4mi7/GlU34kO8TYMTQEkOo7nSqnqrrj9j5oD2Y7J4UjnAXH/NdGQCle8jMVhjKEOGelNk2lkE+yr2frt2Q5hNAEmvR+KZfYsZ2UegFQhtlC1kpOYPONZ2x6fkLi/mQNkrqLZ9Qc1LMTOZVLFnSJjsITMgzNjUVGBNT9iX9EMYrb3lc/0gkuZ/lLFG
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             MDIMenuFenetre(mdiCascade)
+            type : 32
+      -
+        name : Mosaique
+        identifier : 0x3b0a6e313689ea50
+        internal_properties : CAAAAAgAAAAp+tahFBimkR6ITg+K83gDnhK5r6GOqkGsy7wZtng6nHyzBZew8daODJIpDzsEXiBsAKML3qtTVoj0j1TXMyVvWJrMivju+p8K6vYp2r4q/QvMhRv9ALiTORX66zUnwC+aTEC9j51M7+M0LZVSORkcpNyqrp7/kMXmdKYMdTD34ZEKu64rfCC5dsbATs6B+4iWjXFXSMNEngBMm9MxFKGGJG5I0IGYq9QqH2j/qaptPuz/HUU2wIHlgITEsI0P+wtCAwjYQR/m0S0U3Hx1NC1R+UTYITtPthkKPLGjHFqHeFjYG4FIbKHzuhffpbfZCQWeIfH0C3Sx
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             MDIMenuFenetre(mdiMosaique)
+            type : 32
+      -
+        name : Mosaique_Horizontale
+        identifier : 0x3b0a6e471b993ff2
+        internal_properties : CAAAAAgAAABKGMM+T+i3oW+TBtdex28cuEtJnbRwNUqMYMFPkdnKPKq2DZyM8Ss7wLjUcJt6GTo8+hkU1Ma0ti71G7UfTpywLhqYnKDogXkqg3f3axsd44yBFl27SbwycgQ48YviLW5ySxgRmshmjArglEI3unZYSJoX0GtUzk922bBJr1P8Sfi4pLNEE4EHUaYxrNY1FmQenDCeP8H19irMVlB0F45MeC925sG7C0zpaZt217QOTTIlqj9f8l6TTKuvq7tUobpTXo/jBrPsHHo4MDQ/N8ZnUDyhCCWmlyoB7Ux2Qj0Nn06BxLQrffO5/suLlwBxUgNEltKPiJOG++R1nYGzrmf1KD3B
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             MDIMenuFenetre(mdiMosaiqueH)
+            type : 32
+      -
+        name : Arranger_les_icônes
+        identifier : 0x3b0a6e75321ef24a
+        internal_properties : CAAAAAgAAACHxWwwC28P24GkkhpUfT/2eA9mJGgt40XmN9ddKB5PFBtkoMVS7JbQsfDScXcl2/0VUM9WaAb3mpN01I5qSh/UTXID2UNu4i5DQu0ATtTwhsu5TTG1p9fiLnb9dsyBOp7h7N0fI1e+gFuW4JECA/HF0IuEpiYBI6f/6Ovyl7FffwKAUmoQLM3N0Z4vI4HZ2bG4IgYhUUSViECl5e7IvuFq0MxNVw92TEEHd/Ih+0NkDpbXOfX7TSwNvCY15tXzLmdCjJApURzE5uJRmgNL3pClyKbzVISAQ/jkxApFpgYUonZfSbr/mUiDrICAo9upB/keyw7u6ff+OdqOzRGt9j3Wfoo=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             MDIMenuFenetre(mdiArrange)
+            type : 32
+      -
+        name : Iconiser_les_fenêtres
+        identifier : 0x3b0a6f19222f73b8
+        internal_properties : CAAAAAgAAADNjptQavEIsRlBqJF/iyFYGnNariCu4jHHlUXnG0RtjnzdAySw2evaek4fnMpnpyyGpDNlos0ewHH1QcFPauF5dYyH2W2QkxAx8iNp+zblIEJ/jcRb8tn15FZhFd0yk9ORg/iuFEqMwbEOagObcIrD2DhoPUNsRidVTal/+hbrKfNOmGMDARho8HTvzoXxj6h7XxoIrpMo7xXCZr4jH/OS0VoSoLDJqiG0TZV8DgRNYV/s1qm+kp0UN2dN2b6qmlx6a6sBL5Uv1YGE7DKo80Gh9bsflk6iMCEmk7jEr7ksk9PwkHCyAdDQy18nX+jwJGlb0PsdwRg+r7oGSXaUO573imOwpw==
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             MDIMenuFenetre(mdiIconiseTout)
+            type : 32
+      -
+        name : Restaurer_les_fenêtres
+        identifier : 0x3b0a6e832fcc29d6
+        internal_properties : CAAAAAgAAACr8Pm2yBh5pviWzeBi4jifonuW5lD+LvkH1cVXr3RHkHarhE7KqdS//VD9NB7H09DOfC/lLPKpT5rMSDp0O5LqxezjQX2gD8DBMuMpx5bR5GoPYVSLQvVdFEYptXna94exM7QGfDKAceFGmoOnWI7X8FjElSv0imcNLXGnxn6fVdMm+oXp6/pKtob54PNrqVaBHRxaJHUS2SOsCNhhyS24z4Cc2lZjTEOaf2+mbN4H//UqWPOM3O/urelPK9SE1CogiU3rd92Fs5MKZLjAA59jD63FHKiIFn/grUIQtYOWabE+LiLsTzbuRd0lXeL2kttVysnb4SgwqVBsIVicwwBVaEGWQQ==
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             MDIMenuFenetre(mdiRestaureTout)
+            type : 32
+      -
+        name : Tout_Fermer
+        identifier : 0x3b0a6e885c543c1b
+        internal_properties : CAAAAAgAAAAdWtZke4CL/niX9zCIpTfFXmH7oH8KpiNU5RsfiGT18vjeleyQ+Z5j32esLf4y4UThiQClJOdRdQhoGk5xEYq9M6hG45aabO++9UwDcIa8zIolwwyHjaUyrin0GqoMMcT1/wfPereBEqdHrR3hVv/+u15A1KOmceW1a/noQEIFh1zFucCvnTc1RQeMIjvyPoSy2tkbg54tCuu0+zEWpMWpNn25jP/WWdagfJVTB58P9Y3oMRUG5UL1bYVfCwypBL7wEKKVE4JlJoDBgn6sUq3rqEXQbjKM3ijEAiXo4lvlyP/PYoQYskuwV9aTLSn4jmZkfUxqc8Ut0Ldv
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             MDIMenuFenetre(mdiFermeTout)
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+         type : 32
+   -
+     name : Menu MDI
+     identifier : 0x3c51635772b11e54
+     internal_properties : CAAAAAgAAADouuAFK9dxOu1fbmbOd0Mjjddp87kJ8UyxMWjdE2ZqPWDidJjEWrwdhi8d7EILNM1l/0QD4P/+Z86Yj7MgKX0rVbUq+CO8P4/8lz8wlII4rm9UO3aiN1QBZ8BkhoG6mpz+9SVfKFcS4FYWELY62gulUjyCZ/tByuGlVSEV/9ShRfzNe8s8SfjtSRJOvSeAmCqp20ogVvDd6vEmSqMjJCTIjyQtt66OWHvMjIdEi2kHpZqj3m2et2+wYUbjbj9lhfp9f5iJXOxy0Kc8HwJN6VRr2+1KLyxsKQj15QLCiW4372/2JJ3WIxo41Uq8r1gcX7V/PhwoR7j3mXBr4zAE8NOaSt9j
+     options :
+      -
+        name : Tout fermer
+        identifier : 0x3c51640e06bbebb0
+        internal_properties : CAAAAAgAAACKCy8asqFsUQGF5INQjjwJyXTzoZ0JcLCJqPCtHEyvg5HZAA973+kziWFJIdxhmPiDphXOk38tipV47Smny6sjUZa3acRI5BMne8UnZXW+FPPULc2BoEINOL7YDiqJpZeHRvjYe7Y/alp3b9rHjFK6Kj3sFNHOMaXJNWkvfou/BYIItElKCB0GTfeB4YSHSrAVgFxQVb7IhQ6N7NPRoefbwNjSU5Qcx7oJ6328yIndA48092ULfCinf37CtxTr+jCOGEInvsxxVKMX4LuYcDfL0F2XxjuHXtWVibTa5n/jOCFEKdmZ4KHCxJNe2pmouJ6ffvxgXieInNdAP/CWXmEEWR3aeYNu9l4DoABxXsrX/4p9Tlb33lFIIg==
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             MDIMenuFenetre(mdiFermeTout)
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes : []
+   -
+     name : Option1
+     identifier : 0x20fbd5da008e3013
+     internal_properties : CAAAAAgAAACQ17XiJVSW+RPClBnVBbLTBGjBRubxdbA8Fh2vK7PX+/lGsJ4cBA17eKPTGWAq85r5nDAm7QPWpwIDh2N6h8gPqp6qG8gct1+47rRiWGy9KANcw8e/1RN4crkTFCe+syKFcOr7/Y7GYO9Avn2q06RXYTWoOdHUjnxe7d3jX9cbEV6lT4lm41aAmRVz6rGAyAadWRaYDebTXTSizryWxcZHM98iSjdVkvYrUoGQhAo4Nve0AveLeRTe7fT4LKeyz/3+vq7lpNz4LfJEnbVVkEZRlAw/AE4QgfCwgc+00069AwTqxFHVynqy62QfL1LEv/I/0xoWakYXNHhpgQ==
+     options :
+      -
+        name : Aide1
+        identifier : 0x20fbd5dc009337c3
+        internal_properties : CAAAAAgAAAB0l3W4nDwza2quHyKHimdTYUr8cIPkmsGK5ddgSqHULitWwOO6Ls1z/oWb1aSv8wvkQ/ccRqW+IVXlaLQGfWlXTwW+6tMIZ1QamO86OdMIYC1HMOoIUwfiXuJjFouvOyohCUDEaeFK5xlgz/NKbSelU0tn8I8nKtSRvTOkc+pWCiRtbs5DAxyRzE0Jj8ZPTsbIy/VjzLwvycbsYSywAZWiNaZYrMq3LRAJKSgqTQA8eELDy6XdHw2nh3FJfiFgDSzaEwAnptLQIZDn8Hnjhdc/86Ie46HOZmOWtHHMI3bCMgtVdv6ykcenttAqN/MDjWno
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             
+             // Message d'aide
+             info(<§$0004§>,<§$0003§>)
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes : []
+  code_elements :
+   type_code : 26
+   p_codes :
+    -
+      code : |1-
+       
+      type : 32
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAA8fzWcqTnUKDT+GeSKItBAZIlYmlPnvIG2EzNrwgqP+hhaD6RRWTIG9NMgPx2ejQJq+qmPk4Qs8kcCi00MQ0HDOuQciPp4W74ygXbg9c3jXlG/SNtLHG9aXcEsF10vSQ==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      GLOBAL 
+      	gsAliasListeClient est une chaine
+   -
+     code : |1-
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3b8b59e611cb7efe
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Voulez-vous quitter cet exemple ?
+     index : 0
+   -
+     text :
+      fr-FR : Création d'un nouveau client
+     index : 1
+   -
+     text :
+      fr-FR : CREATION
+     index : 2
+   -
+     text :
+      fr-FR : "En effet, une application MDI ne se programme pas de la même façon qu'une application modale. La fonction MDIArrange, par exemple, permet d'arranger toutes les fenêtres filles ouvertes d'une certaine manière. (Voir la documentation pour plus de détails)"
+     index : 3
+   -
+     text :
+      fr-FR : "Cet exemple permet de montrer l'utilisation des fonctions MDIxxx. "
+     index : 4
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_Fenêtre_Mere_MDI.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

@@ -1,0 +1,128 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD Multi-Fenetrage
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : WD Multi-Fenetrage
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : WD Multi-Fenetrage
+    internal_properties : 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
+    configuration_id : 18187723499553369925
+    type : 1
+    generation_name : WD Multi-Fenetrage.exe
+    version :
+     version : 01F120034c
+     autoincrement_version : false
+    icon_filename : .\DOSSIER.ICO
+    language : 1
+ elements :
+  identifier : 0x4af448610011a881
+  elements :
+   -
+     name : TEST_Fenêtre_Mere_MDI
+     identifier : 0x4760f867000a97c4
+     internal_properties : CAAAAAgAAAACeHquHUri/VrA4JdvDnjwVhf9dc+gdqaqwVK04j3XaVtLys20DjXPIx2HcTGvS70HDw==
+     physical_name : .\TEST_Fenêtre_Mere_MDI.wxt
+     type : 17
+   -
+     name : Fen_Fiche_Client
+     identifier : 0x3db51104128e3a6d
+     internal_properties : CAAAAAgAAABFwa3xTmtDXGvR9bhA6AsHyZoUVB4DMkK7Ypt8KBP7DePZWr3bJ0zkNO7o0FCAeGhQ0A==
+     physical_name : .\Fen_Fiche_Client.wdw
+     type : 2
+   -
+     name : Fenêtre_Mere_MDI
+     identifier : 0x3db51107721e3a9f
+     internal_properties : CAAAAAgAAACQbsjU04iguwSOotUtzjIm1EEjK02RCF63ph4zxmU3sR/jdpH2zPcRYdvFM/PtlQv1fQ==
+     physical_name : .\Fenetre_Mere_MDI.wdw
+     type : 2
+   -
+     name : Fen_TableClients
+     identifier : 0x3db5110950413adb
+     internal_properties : CAAAAAgAAAB+5FZKeSaOoa7khKtTFgzkWhuB2Q+lSbDqbi1BHh1/iWNTwsXAOlnzBzGrFZ1TL6Fr6w==
+     physical_name : .\Fen_TableClients.wdw
+     type : 2
+   -
+     name : FI_Fiche_Client
+     identifier : 0x44b91d680169778b
+     internal_properties : CAAAAAgAAABO1Kb6SXY+cX6TR2J8r2I8yL9HT2T1Q+mOm8RZ4jJi/sYoY4TULauiFwH7xU2Df3Fb2w==
+     physical_name : .\FI_Fiche_Client.wdw
+     type : 8
+   -
+     name : FEN_Onglet_MDI
+     identifier : 0x44b91c8901631063
+     internal_properties : CAAAAAgAAAANCWW5BnM7ZHNoTwjrIPRxyVgQ2O0erFlWnV3HRq7kNMR86Sc9xKWbHAbwyEi4QLAYGA==
+     physical_name : .\FEN_Onglet_MDI.wdw
+     type : 2
+   -
+     name : FEN_Menu
+     identifier : 0x44c0d07900edbb10
+     internal_properties : CAAAAAgAAACA/vgkg/iw6/Tknlcj26ZRJovltSucSwt2glSqlLtRtx2Bb8wQKJEvkYt1Q8M9xTuFjQ==
+     physical_name : .\FEN_Menu.wdw
+     type : 2
+  other_elements :
+   -
+     physical_name : .\Description.rtf
+   -
+     physical_name : .\Description.gif
+  analysis : .\WD Multi-Fenetrage.ana\WD Multi-Fenetrage.wda
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - fr-FR
+ code_elements :
+  internal_properties : CAAAAAgAAADdpmvzmtTKO8Vp4qjD6q2P2918klLs82bxEZTY96YgSVgoZfRuVqlv1AvvuirEs3f4HbUjf22DZUEw3r6xz3m8HHyGpAaC9DU=
+  type_code : 0
+  p_codes :
+   -
+     code : |1-
+      
+     type : 196608
+   -
+     code : |1-
+      
+     type : 196610
+   -
+     code : |1-
+      
+     type : 196619
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : WD Multi-Fenetrage
+     identifier : 0x4af448620017a8ef
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : DEMO
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==
